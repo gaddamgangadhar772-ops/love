@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Love World | For Kothi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Scene -->
+    <div id="stars-container"></div>
+    <div id="hearts-container"></div>
+
+    <!-- Audio Element (Hidden) -->
+    <audio id="bg-music" loop>
+        <source src="ney-verey.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Project Entry Overlay -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <h2 class="dancing-script">Entering the Universe of Love...</h2>
+            <p style="margin-top: 10px; opacity: 0.8;">Set the mood with: <i>Ney Verey</i></p>
+            <div class="heart-loader"></div>
+        </div>
+    </div>
+
+    <main id="main-content" class="hidden">
+        <!-- Scene 1: Prologue (Flashback) -->
+        <section id="prologue" class="prologue">
+            <div class="prologue-bg"></div>
+            <div class="content">
+                <h2 class="dancing-script glow-text fade-in-up">Where it all began...</h2>
+                <h1 class="prologue-date fade-in-up delay-1">AUG 2021</h1>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="content">
+                <h1 class="main-title glow-text fade-in-up">5 Years of Us ❤️ <span class="highlight">Kothi</span></h1>
+                <p class="subtitle fade-in-up delay-1">Through every storm and every sunset, we chose each other.
+                </p>
+                <div class="scroll-indicator fade-in-up delay-2">
+                    <span>Scroll to explore our world</span>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forever & Counting Timer Section -->
+        <section id="timer-section" class="timer-section fade-in-up">
+            <h2 class="dancing-script section-title">Our Time Together</h2>
+            <div id="love-timer" class="love-timer">
+                <div class="time-box"><span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="time-box"><span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time-box"><span id="minutes">00</span>
+                    <p>Mins</p>
+                </div>
+                <div class="time-box"><span id="seconds">00</span>
+                    <p>Secs</p>
+                </div>
+            </div>
+            <p class="timer-subtext">Every second with you is a weightless dream.</p>
+            <!-- Scene 4: Heartbeat Pulse-Line -->
+            <div class="heartbeat-pulse-container">
+                <div class="heartbeat-line" id="heartbeat"></div>
+            </div>
+        </section>
+
+        <!-- Scene 2: The Vow (Cinematic Transition) -->
+        <section id="the-vow" class="the-vow">
+            <div class="vow-transition-bg"></div>
+            <div class="sparkle-container" id="vow-sparkle"></div>
+            <div class="content">
+                <h2 class="vow-text glow-text fade-in-up">The day I promised you my forever</h2>
+                <h3 class="vow-date highlight fade-in-up delay-1">Sep 24, 2021 💍</h3>
+            </div>
+        </section>
+
+        <!-- Interactive Section -->
+        <section id="interactive" class="interactive">
+            <div class="content">
+                <h2 class="dancing-script">Our Feelings are Weightless</h2>
+                <button id="love-button" class="love-btn">Click My Heart 💖</button>
+                <div id="secret-message" class="secret-message hidden">
+                    <p>"Even when the world loses gravity, my heart falls only for you ❤️ Kothi"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secret Love Letter Section -->
+        <section id="love-letter" class="love-letter-section fade-in-up">
+            <div class="envelope-wrapper" id="envelope">
+                <div class="envelope">
+                    <div class="wax-seal">❤️</div>
+                </div>
+                <div class="letter">
+                    <h3 class="dancing-script">My Dearest Kothi,</h3>
+                    <p>5 years ago, our journey began. We've weathered loud fights, painful silences, and moments where
+                        it felt like we might drift apart. But look at us now—still standing, still in love, and
+                        stronger than ever.</p>
+                    <p>It’s not just the easy days I cherish, but the way we fought for *us* during the hard ones. You
+                        are my anchor in the storm and my light in the dark. I love you beyond words.</p>
+                    <p class="dancing-script">Forever Yours, [Your Name]</p>
+                </div>
+            </div>
+            <p class="letter-hint">Tap the seal to open my heart...</p>
+        </section>
+
+        <!-- New Slide 1: The Daily Choice -->
+        <section id="daily-choice" class="love-slide fade-in-up">
+            <div class="content">
+                <h2 class="dancing-script glow-text">The Daily Choice</h2>
+                <div class="message-card glass">
+                    <p>"In a world of billions, choosing you isn't something I did once—it's something I do every single
+                        morning when I wake up. Through every fight and every laugh, my soul keeps choosing yours."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Slide 2: The Mirror of Growth -->
+        <section id="mirror-growth" class="love-slide fade-in-up">
+            <div class="content">
+                <h2 class="dancing-script glow-text">The Mirror of Us</h2>
+                <div class="message-card glass">
+                    <p>"I see my best self in the way you look at me. You are the mirror that shows me my strength when
+                        I feel weak, and my light when the world goes dark. Together, we are a masterpiece in progress."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Slide 3: The Unspoken Bond -->
+        <section id="unspoken-bond" class="love-slide fade-in-up">
+            <div class="content">
+                <h2 class="dancing-script glow-text">The Unspoken Bond</h2>
+                <div class="message-card glass">
+                    <p>"The most beautiful conversations we’ve had were the ones where no one said a word. It’s the way
+                        you hold my hand, the way you understand my silence, and the way your presence feels like 'home'
+                        without saying it."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Slide 4: The Beauty of Mending -->
+        <section id="mending" class="love-slide fade-in-up">
+            <div class="content">
+                <h2 class="dancing-script glow-text">The Beauty of Mending</h2>
+                <div class="message-card glass">
+                    <p>"Our love wasn't built on just the easy days. It was built in the trenches of our loudest
+                        arguments and the pain of our break moments. We are stronger not because we never broke, but
+                        because of how we mended."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Slide 5: The Next Horizon -->
+        <section id="next-horizon" class="love-slide next-horizon fade-in-up">
+            <div class="horizon-bg"></div>
+            <div class="content">
+                <h2 class="dancing-script glow-text">The Next Fifty Years</h2>
+                <div class="message-card glass">
+                    <p>"5 years is just the preface of the book I want to write with you. I don't just want to grow old
+                        with you; I want to grow *new* with you, discovery by discovery, for the rest of my days."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide: The Map of Our Souls -->
+        <section id="soul-map" class="soul-map">
+            <div class="map-bg"></div>
+            <div class="content">
+                <h2 class="dancing-script glow-text fade-in-up">The Map of Our Souls</h2>
+                <p class="fade-in-up delay-1">Every path we took, every storm we weathered... led us right back to each
+                    other.</p>
+                <div class="constellation-heart fade-in-up delay-2"></div>
+            </div>
+        </section>
+
+        <!-- Floating Memories Section -->
+        <section id="memories" class="memories">
+            <h2 class="section-title">Whirlwind of Memories</h2>
+            <div class="memories-grid">
+                <div class="memory-card floating">
+                    <div class="card-inner">
+                        <p>August 2021<br>Where Our Story Began ❤️</p>
+                    </div>
+                </div>
+                <div class="memory-card floating delay-1">
+                    <div class="card-inner">
+                        <img src="pic1.jpg" alt="Memory 1" class="memory-pic">
+                        <p>Sep 24, 2021<br>The Day You Proposed 💍</p>
+                    </div>
+                </div>
+                <div class="memory-card floating delay-2">
+                    <div class="card-inner">
+                        <img src="pic2.jpg" alt="Memory 2" class="memory-pic">
+                        <p>Your smile, my favorite view. 😊</p>
+                    </div>
+                </div>
+                <div class="memory-card floating delay-3">
+                    <div class="card-inner">
+                        <img src="pic3.jpg" alt="Memory 3" class="memory-pic">
+                        <p>Captured in our magic. ✨</p>
+                    </div>
+                </div>
+                <div class="memory-card floating delay-4">
+                    <div class="card-inner">
+                        <img src="pic4.jpg" alt="Memory 4" class="memory-pic">
+                        <p>Laughter shared ✨</p>
+                    </div>
+                </div>
+                <div class="memory-card floating delay-5">
+                    <div class="card-inner">
+                        <img src="pic4.jpg" alt="Memory 5" class="memory-pic">
+                        <p>5 years journey... ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide: The Seasons of Us -->
+        <section id="seasons" class="seasons">
+            <div class="seasons-overlay"></div>
+            <div class="content">
+                <h2 class="dancing-script section-title">The Seasons of Us</h2>
+                <div class="seasons-grid">
+                    <div class="season-item fade-in-up">
+                        <span>2021</span>
+                        <p>The Spark ✨</p>
+                    </div>
+                    <div class="season-item fade-in-up delay-1">
+                        <span>2022</span>
+                        <p>The Anchor ⚓</p>
+                    </div>
+                    <div class="season-item fade-in-up delay-2">
+                        <span>2023</span>
+                        <p>The Flame 🔥</p>
+                    </div>
+                    <div class="season-item fade-in-up delay-3">
+                        <span>2024</span>
+                        <p>The Home 🏠</p>
+                    </div>
+                    <div class="season-item fade-in-up delay-4">
+                        <span>2025</span>
+                        <p>The Forever ∞</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 3: Infinite Resilience (Parallax) -->
+        <section id="resilience" class="resilience">
+            <div class="parallax-bg" id="resilience-bg"></div>
+            <div class="debris-container" id="debris-container"></div>
+            <div class="content">
+                <h2 class="dancing-script glow-text fade-in-up">Infinite Resilience</h2>
+                <p class="resilience-quote fade-in-up delay-1">"We didn't just survive the storm... we learned to dance
+                    in it."</p>
+                <p class="resilience-sub fade-in-up delay-2">5 years through every high and every low.</p>
+            </div>
+        </section>
+
+        <!-- Whispers of Love Section -->
+        <section id="whispers" class="whispers fade-in-up">
+            <h2 class="dancing-script section-title">Whispers of My Heart</h2>
+            <div class="quotes-container">
+                <div class="quote-card">
+                    <p>"In the silence of the night, my heart only whispers your name."</p>
+                </div>
+                <div class="quote-card delay-1">
+                    <p>"You are my favorite thought, my deepest love, and my forever home."</p>
+                </div>
+                <div class="quote-card delay-2">
+                    <p>"Every heartbeat is a reminder of how much I cherish you."</p>
+                </div>
+                <div class="quote-card delay-3">
+                    <p>"Storms may come and go, but you are my forever anchor. 5 years and I'd choose you all over
+                        again."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Climax Section -->
+        <section id="climax" class="climax">
+            <div class="climax-bg"></div>
+            <div class="content">
+                <div class="pulsing-heart">❤️</div>
+                <h2 class="final-text glow-text fade-in-up">You are my forever ❤️ <span class="highlight">Kothi</span>
+                </h2>
+                <p class="final-sub fade-in-up delay-1">"5 years, 1,825 days, and a million moments later—my heart still
+                    chooses you, today, tomorrow, and for all the lifetimes to come."</p>
+                <div class="signature fade-in-up delay-3">
+                    <p class="dancing-script">With all my love...</p>
+                    <h3 class="highlight">Dhar</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
